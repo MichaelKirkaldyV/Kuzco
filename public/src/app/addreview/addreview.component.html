@@ -1,0 +1,35 @@
+<h1>Squishy Tomatoes</h1>
+
+<div class="container">
+	<h1>Add a review for {{movie.title}}</h1>
+	<div *ngFor = "let message of errorMessages">
+		<p>{{errorMessages[0].name.message}}</p>
+		<p>{{errorMessages[0].stars.message}}</p>
+		<p>{{errorMessages[0].review.message}}</p>
+	</div>
+	
+	<form (submit) = "addReview()">
+		<div class="formdiv">
+		</div>
+		<div class="formdiv">
+			<label class="movieName">Your name</label>
+			<input type="text" name="name" [(ngModel)] = "review.name" class="name">
+		</div>
+		<div>
+			<label>Stars</label>
+			<select name="moviestars" [(ngModel)] = "review.stars" class="stars">
+				<option name="1">1</option>
+				<option name="2">2</option>
+				<option name="3">3</option>
+				<option name="4">4</option>
+				<option name="5">5</option>
+			</select>
+		</div>
+		<div class="reviewdiv">
+			<label class="_review">Review</label>
+			<input type="text" name="review" class="review" [(ngModel)] = "review.review">
+		</div>
+		<input type="submit" name="submit" value="Submit" class="submit">
+	</form>
+		<button [routerLink] = "['/movies',id]" class="button">Cancel</button>
+</div>

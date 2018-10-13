@@ -1,0 +1,79 @@
+
+h1 {
+	font-family: arial;
+}
+
+.container {
+	height: 550px;
+	width: 700px;
+	border: 2px solid black;
+	padding: 10px;
+}
+
+label {
+	margin-right: 50px;
+	font-family: arial;
+	color: #666666;
+	font-weight: bold;
+	font-size: 25px;
+}
+div {
+	margin-top: 20px;
+}
+
+.title {
+	margin-left: -1px;
+}
+
+.name{
+	margin-left: -6px;
+}
+
+.stars {
+	margin-left: 58px;
+	width: 140px;
+}
+
+.review {
+	margin-left: 34px;
+	height: 50px;
+}
+
+._review {
+	vertical-align: top;
+}
+
+.reviewdiv {
+	height: 130px;
+	width: 400px;
+}
+
+textarea {
+	height: 100px;
+	width: 170px;
+}
+
+.submit {
+	color: white;
+	background-color: #7b93a8;
+	padding: 10px;
+	width: 140px;
+	border-radius: 10px;
+	margin-left: 100px;
+}
+
+.button {
+	float: left;
+	margin-left: 270px;
+	margin-top: -39px;
+	background-color: #d0af8c;
+	color: white;
+	padding: 10px;
+	width: 140px;
+	border-radius: 10px;
+
+}
+
+p {
+	color: blue;
+}

@@ -1,0 +1,27 @@
+<h1>Squishy Tomatoes</h1>
+<div>
+	<h1>Reviews for {{movie.title}}</h1>
+	<button (click) = "removeMovie()">Delete Movie</button>
+	<table>
+		<thead>
+			<tr class="headers">
+				<th>Reviewer</th>
+				<th>Stars</th>
+				<th>Reviews</th>
+			</tr>			
+		</thead>
+		<tbody>
+			<tr *ngIf = "movie">
+				<td>{{movie.name}}</td>
+				<td>{{movie.stars}}</td>
+				<td>{{movie.review}}</td>
+			</tr>
+			<tr *ngFor = "let review of reviews">
+				<td>{{review.name}}</td>
+				<td>{{review.stars}}</td>
+				<td>{{review.review}}</td>
+				
+			</tr>			
+		</tbody>
+	</table>
+</div>
